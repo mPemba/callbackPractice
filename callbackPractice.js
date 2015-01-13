@@ -24,7 +24,9 @@ and what you should write is the favNum function that makes the code above work,
 
 
 
-  //Code Here for first
+var first = function(array, cb) {
+  cb(array[0]);
+}
   
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 first(names, function(firstName){
@@ -38,7 +40,9 @@ first(names, function(firstName){
 
 
 
-  //Code Here for last
+var last = function(array, cb) {
+  cb(array[array.length -1]);
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){
@@ -56,7 +60,9 @@ last(names, function(lastName){
 
 
 
-  //Code Here for multiply
+var multiply = function(a, b, cb) {
+  cb(a * b);
+}
 
 multiply(4, 3, function(answer){
   console.log('The answer is ', answer); //should console.log 12
@@ -72,11 +78,13 @@ multiply(4, 3, function(answer){
 
 
 
-  //Code Here for contains
+var contains = function(array, name, cb) {
+  cb(array.indexOf(name) !== -1);
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 contains(names, 'Colt', function(result){
-  if(result === true){
+  if(result === true) {
     console.log('Colt is in the array');
   } else {
     console.log('Colt is not in the array');
@@ -92,7 +100,15 @@ contains(names, 'Colt', function(result){
 
 
 
-    //Code Here for uniq
+var uniq = function(array, callback) {
+  var uniqArr = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array.indexOf()) {
+      a.push(array[i])
+    }
+    callback(array);
+  }
+});
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 uniq(names, function(uniqArr){
