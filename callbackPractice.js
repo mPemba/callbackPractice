@@ -147,8 +147,9 @@ each(names, function(item, indice){
 
 var getUserById = function(array, id, callback) {
   for (var i = 0; i < array.length; i++) {
-    if (array[i].id === '16t') {
+    if (array[i].id === id) {
       callback(array[i]);
+      break;
     }
   }
 }
