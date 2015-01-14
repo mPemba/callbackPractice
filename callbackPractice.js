@@ -96,8 +96,15 @@ contains(names, 'Colt', function(result){
 
 
 /* NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM ---- NEXT PROBLEM */
-
-
+// var uniq = function(arr, cb) {
+//   for (var i = 0; i < arr.length; i++) {
+//     if (i !== arr.indexOf(arr[i])) {
+//       arr.splice(i, 1);
+//       i--;
+//     }
+//   }
+//   cb(arr);
+// }
 
 
 var uniq = function(array, callback) {
